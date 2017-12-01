@@ -1,0 +1,75 @@
+{
+  "name": "TrafficView",
+  "author": "Nguyen Don Ngoc Quang",
+  "version": "0.0.1",
+  "private": true,
+  "license": "",
+  "description": "A web application help manage camera and detect trafic group",
+  "scripts": {
+    "start": "node app.js",
+    "debug": "node --inspect --ignore public/ app.js",
+    "build": "gulp build",
+    "lint": "eslint . --quiet"
+  },
+  "engines": {
+    "node": "7.9.0"
+  },
+  "dependencies": {
+    "@google-cloud/speech": "^0.11.0",
+    "@google-cloud/vision": "^0.12.0",
+    "body-parser": "1.15.2",
+    "convict": "2.0.0",
+    "cookie": "0.3.1",
+    "cookie-parser": "1.4.3",
+    "debug": "2.3.3",
+    "ejs": "^2.5.7",
+    "express": "4.14.0",
+    "fs": "0.0.1-security",
+    "google-vision-api-client": "0.0.3",
+    "jsonwebtoken": "^8.1.0",
+    "lodash": "4.17.2",
+    "mongoose": "^4.13.3",
+    "multer": "^1.3.0",
+    "node-quickbooks": "2.0.11",
+    "node-uuid": "^1.4.8",
+    "node-wit": "^4.3.0",
+    "nodemailer": "2.6.4",
+    "opn": "^5.1.0",
+    "q": "^1.5.1",
+    "request": "2.79.0",
+    "socket.io": "1.6.0",
+    "ws": "^3.3.0"
+  },
+  "devDependencies": {
+    "concurrently": "3.1.0",
+    "css-loader": "0.26.1",
+    "eslint": "^3.12.2",
+    "eslint-config-standard": "6.2.1",
+    "eslint-plugin-promise": "3.4.0",
+    "eslint-plugin-standard": "2.0.1",
+    "faker": "3.1.0",
+    "file-loader": "0.9.0",
+    "gulp": "3.9.1",
+    "gulp-clean-css": "2.0.13",
+    "gulp-cli": "1.2.2",
+    "gulp-concat": "2.6.1",
+    "gulp-util": "3.0.7",
+    "happypack": "3.0.1",
+    "lru-cache": "4.0.1",
+    "node-wit": "^4.3.0",
+    "pre-git": "3.12.0",
+    "serverless": "^1.24.0",
+    "tracer": "^0.8.11",
+    "url-loader": "0.5.7",
+    "webpack-dev-server": "2.2.0-rc.0",
+    "webpack-hot-middleware": "2.13.2"
+  },
+  "config": {
+    "pre-git": {
+      "pre-push": [
+        "echo 'Pre-push checks...' && exit 0",
+        "npm run lint"
+      ]
+    }
+  }
+}

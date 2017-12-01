@@ -1,0 +1,375 @@
+[2017-11-06 16:11:57.892] [ERROR] [default] - [D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js - this] { Error: ENOENT: no such file or directory, open 'D:\tmp\gtoken.json'
+    at Error (native)
+    at Object.fs.openSync (fs.js:641:18)
+    at Object.fs.writeFileSync (fs.js:1347:33)
+    at saveToken (D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js:109:10)
+    at D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js:122:9
+    at Request._callback (D:\project\Nodejs\training\BackendWithTest\node_modules\gapitoken\gapitoken.js:93:13)
+    at Request.self.callback (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:186:22)
+    at emitTwo (events.js:106:13)
+    at Request.emit (events.js:191:7)
+    at Request.<anonymous> (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:1081:10)
+    at emitOne (events.js:96:13)
+    at Request.emit (events.js:188:7)
+    at IncomingMessage.<anonymous> (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:1001:12)
+    at IncomingMessage.g (events.js:292:16)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\tmp\\gtoken.json' }
+[2017-11-06 16:43:28.525] [ERROR] [default] - [D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js - this] { Error: ENOENT: no such file or directory, open 'D:\tmp\gtoken.json'
+    at Error (native)
+    at Object.fs.openSync (fs.js:641:18)
+    at Object.fs.writeFileSync (fs.js:1347:33)
+    at saveToken (D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js:109:10)
+    at D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js:122:9
+    at Request._callback (D:\project\Nodejs\training\BackendWithTest\node_modules\gapitoken\gapitoken.js:93:13)
+    at Request.self.callback (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:186:22)
+    at emitTwo (events.js:106:13)
+    at Request.emit (events.js:191:7)
+    at Request.<anonymous> (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:1081:10)
+    at emitOne (events.js:96:13)
+    at Request.emit (events.js:188:7)
+    at IncomingMessage.<anonymous> (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:1001:12)
+    at IncomingMessage.g (events.js:292:16)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\tmp\\gtoken.json' }
+[2017-11-06 16:44:32.645] [ERROR] [default] - [D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js - this] { Error: ENOENT: no such file or directory, open 'D:\tmp\gtoken.json'
+    at Error (native)
+    at Object.fs.openSync (fs.js:641:18)
+    at Object.fs.writeFileSync (fs.js:1347:33)
+    at saveToken (D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js:109:10)
+    at D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js:122:9
+    at Request._callback (D:\project\Nodejs\training\BackendWithTest\node_modules\gapitoken\gapitoken.js:93:13)
+    at Request.self.callback (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:186:22)
+    at emitTwo (events.js:106:13)
+    at Request.emit (events.js:191:7)
+    at Request.<anonymous> (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:1081:10)
+    at emitOne (events.js:96:13)
+    at Request.emit (events.js:188:7)
+    at IncomingMessage.<anonymous> (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:1001:12)
+    at IncomingMessage.g (events.js:292:16)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\tmp\\gtoken.json' }
+[2017-11-06 16:45:15.155] [ERROR] [default] - [D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js - this] { Error: ENOENT: no such file or directory, open 'D:\tmp\gtoken.json'
+    at Error (native)
+    at Object.fs.openSync (fs.js:641:18)
+    at Object.fs.writeFileSync (fs.js:1347:33)
+    at saveToken (D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js:109:10)
+    at D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js:122:9
+    at Request._callback (D:\project\Nodejs\training\BackendWithTest\node_modules\gapitoken\gapitoken.js:93:13)
+    at Request.self.callback (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:186:22)
+    at emitTwo (events.js:106:13)
+    at Request.emit (events.js:191:7)
+    at Request.<anonymous> (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:1081:10)
+    at emitOne (events.js:96:13)
+    at Request.emit (events.js:188:7)
+    at IncomingMessage.<anonymous> (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:1001:12)
+    at IncomingMessage.g (events.js:292:16)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\tmp\\gtoken.json' }
+[2017-11-06 16:46:51.807] [ERROR] [default] - [D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js - this] { Error: ENOENT: no such file or directory, open 'D:\tmp\gtoken.json'
+    at Error (native)
+    at Object.fs.openSync (fs.js:641:18)
+    at Object.fs.writeFileSync (fs.js:1347:33)
+    at saveToken (D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js:109:10)
+    at D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js:122:9
+    at Request._callback (D:\project\Nodejs\training\BackendWithTest\node_modules\gapitoken\gapitoken.js:93:13)
+    at Request.self.callback (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:186:22)
+    at emitTwo (events.js:106:13)
+    at Request.emit (events.js:191:7)
+    at Request.<anonymous> (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:1081:10)
+    at emitOne (events.js:96:13)
+    at Request.emit (events.js:188:7)
+    at IncomingMessage.<anonymous> (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:1001:12)
+    at IncomingMessage.g (events.js:292:16)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\tmp\\gtoken.json' }
+[2017-11-06 16:47:24.568] [ERROR] [default] - [D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js - this] { Error: ENOENT: no such file or directory, open 'D:\tmp\gtoken.json'
+    at Error (native)
+    at Object.fs.openSync (fs.js:641:18)
+    at Object.fs.writeFileSync (fs.js:1347:33)
+    at saveToken (D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js:109:10)
+    at D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js:122:9
+    at Request._callback (D:\project\Nodejs\training\BackendWithTest\node_modules\gapitoken\gapitoken.js:93:13)
+    at Request.self.callback (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:186:22)
+    at emitTwo (events.js:106:13)
+    at Request.emit (events.js:191:7)
+    at Request.<anonymous> (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:1081:10)
+    at emitOne (events.js:96:13)
+    at Request.emit (events.js:188:7)
+    at IncomingMessage.<anonymous> (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:1001:12)
+    at IncomingMessage.g (events.js:292:16)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\tmp\\gtoken.json' }
+[2017-11-06 16:47:49.144] [ERROR] [default] - [D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js - this] { Error: ENOENT: no such file or directory, open 'D:\tmp\gtoken.json'
+    at Error (native)
+    at Object.fs.openSync (fs.js:641:18)
+    at Object.fs.writeFileSync (fs.js:1347:33)
+    at saveToken (D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js:109:10)
+    at D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js:122:9
+    at Request._callback (D:\project\Nodejs\training\BackendWithTest\node_modules\gapitoken\gapitoken.js:93:13)
+    at Request.self.callback (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:186:22)
+    at emitTwo (events.js:106:13)
+    at Request.emit (events.js:191:7)
+    at Request.<anonymous> (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:1081:10)
+    at emitOne (events.js:96:13)
+    at Request.emit (events.js:188:7)
+    at IncomingMessage.<anonymous> (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:1001:12)
+    at IncomingMessage.g (events.js:292:16)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\tmp\\gtoken.json' }
+[2017-11-06 16:47:59.405] [ERROR] [default] - [D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js - this] { Error: ENOENT: no such file or directory, open 'D:\tmp\gtoken.json'
+    at Error (native)
+    at Object.fs.openSync (fs.js:641:18)
+    at Object.fs.writeFileSync (fs.js:1347:33)
+    at saveToken (D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js:109:10)
+    at D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js:122:9
+    at Request._callback (D:\project\Nodejs\training\BackendWithTest\node_modules\gapitoken\gapitoken.js:93:13)
+    at Request.self.callback (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:186:22)
+    at emitTwo (events.js:106:13)
+    at Request.emit (events.js:191:7)
+    at Request.<anonymous> (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:1081:10)
+    at emitOne (events.js:96:13)
+    at Request.emit (events.js:188:7)
+    at IncomingMessage.<anonymous> (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:1001:12)
+    at IncomingMessage.g (events.js:292:16)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\tmp\\gtoken.json' }
+[2017-11-06 16:48:20.579] [ERROR] [default] - [D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js - this] { Error: ENOENT: no such file or directory, open 'D:\tmp\gtoken.json'
+    at Error (native)
+    at Object.fs.openSync (fs.js:641:18)
+    at Object.fs.writeFileSync (fs.js:1347:33)
+    at saveToken (D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js:109:10)
+    at D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js:122:9
+    at Request._callback (D:\project\Nodejs\training\BackendWithTest\node_modules\gapitoken\gapitoken.js:93:13)
+    at Request.self.callback (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:186:22)
+    at emitTwo (events.js:106:13)
+    at Request.emit (events.js:191:7)
+    at Request.<anonymous> (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:1081:10)
+    at emitOne (events.js:96:13)
+    at Request.emit (events.js:188:7)
+    at IncomingMessage.<anonymous> (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:1001:12)
+    at IncomingMessage.g (events.js:292:16)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\tmp\\gtoken.json' }
+[2017-11-06 16:49:07.128] [ERROR] [default] - [D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js - this] { Error: ENOENT: no such file or directory, open 'D:\tmp\gtoken.json'
+    at Error (native)
+    at Object.fs.openSync (fs.js:641:18)
+    at Object.fs.writeFileSync (fs.js:1347:33)
+    at saveToken (D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js:109:10)
+    at D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js:122:9
+    at Request._callback (D:\project\Nodejs\training\BackendWithTest\node_modules\gapitoken\gapitoken.js:93:13)
+    at Request.self.callback (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:186:22)
+    at emitTwo (events.js:106:13)
+    at Request.emit (events.js:191:7)
+    at Request.<anonymous> (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:1081:10)
+    at emitOne (events.js:96:13)
+    at Request.emit (events.js:188:7)
+    at IncomingMessage.<anonymous> (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:1001:12)
+    at IncomingMessage.g (events.js:292:16)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\tmp\\gtoken.json' }
+[2017-11-06 16:52:18.856] [ERROR] [default] - [D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js - this] { Error: ENOENT: no such file or directory, open 'D:\tmp\gtoken.json'
+    at Error (native)
+    at Object.fs.openSync (fs.js:641:18)
+    at Object.fs.writeFileSync (fs.js:1347:33)
+    at saveToken (D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js:109:10)
+    at D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js:122:9
+    at Request._callback (D:\project\Nodejs\training\BackendWithTest\node_modules\gapitoken\gapitoken.js:93:13)
+    at Request.self.callback (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:186:22)
+    at emitTwo (events.js:106:13)
+    at Request.emit (events.js:191:7)
+    at Request.<anonymous> (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:1081:10)
+    at emitOne (events.js:96:13)
+    at Request.emit (events.js:188:7)
+    at IncomingMessage.<anonymous> (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:1001:12)
+    at IncomingMessage.g (events.js:292:16)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\tmp\\gtoken.json' }
+[2017-11-06 16:54:01.154] [ERROR] [default] - [D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js - this] { Error: ENOENT: no such file or directory, open 'D:\tmp\gtoken.json'
+    at Error (native)
+    at Object.fs.openSync (fs.js:641:18)
+    at Object.fs.writeFileSync (fs.js:1347:33)
+    at saveToken (D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js:109:10)
+    at D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js:122:9
+    at Request._callback (D:\project\Nodejs\training\BackendWithTest\node_modules\gapitoken\gapitoken.js:93:13)
+    at Request.self.callback (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:186:22)
+    at emitTwo (events.js:106:13)
+    at Request.emit (events.js:191:7)
+    at Request.<anonymous> (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:1081:10)
+    at emitOne (events.js:96:13)
+    at Request.emit (events.js:188:7)
+    at IncomingMessage.<anonymous> (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:1001:12)
+    at IncomingMessage.g (events.js:292:16)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\tmp\\gtoken.json' }
+[2017-11-06 16:55:58.286] [ERROR] [default] - [D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js - this] { Error: ENOENT: no such file or directory, open 'D:\tmp\gtoken.json'
+    at Error (native)
+    at Object.fs.openSync (fs.js:641:18)
+    at Object.fs.writeFileSync (fs.js:1347:33)
+    at saveToken (D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js:109:10)
+    at D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js:122:9
+    at Request._callback (D:\project\Nodejs\training\BackendWithTest\node_modules\gapitoken\gapitoken.js:93:13)
+    at Request.self.callback (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:186:22)
+    at emitTwo (events.js:106:13)
+    at Request.emit (events.js:191:7)
+    at Request.<anonymous> (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:1081:10)
+    at emitOne (events.js:96:13)
+    at Request.emit (events.js:188:7)
+    at IncomingMessage.<anonymous> (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:1001:12)
+    at IncomingMessage.g (events.js:292:16)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\tmp\\gtoken.json' }
+[2017-11-06 16:56:26.441] [ERROR] [default] - [D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js - this] { Error: ENOENT: no such file or directory, open 'D:\tmp\gtoken.json'
+    at Error (native)
+    at Object.fs.openSync (fs.js:641:18)
+    at Object.fs.writeFileSync (fs.js:1347:33)
+    at saveToken (D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js:109:10)
+    at D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js:122:9
+    at Request._callback (D:\project\Nodejs\training\BackendWithTest\node_modules\gapitoken\gapitoken.js:93:13)
+    at Request.self.callback (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:186:22)
+    at emitTwo (events.js:106:13)
+    at Request.emit (events.js:191:7)
+    at Request.<anonymous> (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:1081:10)
+    at emitOne (events.js:96:13)
+    at Request.emit (events.js:188:7)
+    at IncomingMessage.<anonymous> (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:1001:12)
+    at IncomingMessage.g (events.js:292:16)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\tmp\\gtoken.json' }
+[2017-11-06 16:57:46.075] [ERROR] [default] - [D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js - this] { Error: ENOENT: no such file or directory, open 'D:\tmp\gtoken.json'
+    at Error (native)
+    at Object.fs.openSync (fs.js:641:18)
+    at Object.fs.writeFileSync (fs.js:1347:33)
+    at saveToken (D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js:109:10)
+    at D:\project\Nodejs\training\BackendWithTest\node_modules\google-api-utility\lib\gauth.js:122:9
+    at Request._callback (D:\project\Nodejs\training\BackendWithTest\node_modules\gapitoken\gapitoken.js:93:13)
+    at Request.self.callback (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:186:22)
+    at emitTwo (events.js:106:13)
+    at Request.emit (events.js:191:7)
+    at Request.<anonymous> (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:1081:10)
+    at emitOne (events.js:96:13)
+    at Request.emit (events.js:188:7)
+    at IncomingMessage.<anonymous> (D:\project\Nodejs\training\BackendWithTest\node_modules\request\request.js:1001:12)
+    at IncomingMessage.g (events.js:292:16)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\tmp\\gtoken.json' }
