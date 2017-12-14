@@ -40,7 +40,8 @@ exports.getDrinkByMenu = (req, res) => {
 }
 exports.addMenu = (req, res) => {
     let menu = new Menu({
-        name: req.body.name
+        name: req.body.name,
+        expressions: req.body.expressions
     })
     menu.save(err => {
         if (err) return res.status(400).send(err);
@@ -51,7 +52,8 @@ exports.addDrink = (req, res) => {
     let drink = new Drink({
         name: req.body.name,
         menu: req.body.menuId,
-        price: req.body.price
+        price: req.body.price,
+        expressions: req.body.expressions
     })
     drink.save(err => {
         if (err) return res.status(400).send(err);
@@ -64,6 +66,7 @@ exports.editMenu = (req, res) => {
     Menu.findById(id, (err, menu) => {
         if (err) return res.status(400).send(err);
         menu.name = req.body.name;
+        menu.expressions = req.body.expressions;
         menu.save((err, updateMenu) => {
             if (err) return res.status(400).send(err);
             res.status(200).send(updateMenu);
@@ -75,6 +78,7 @@ exports.editDrink = (req, res) => {
     let id = req.params.id;
     Drink.findById(id, (err, drink) => {
         drink.name = req.body.name;
+        drink.expressions = req.body.expressions;
         if (req.body.menuId && req.body.menuId != '')
             drink.menu = req.body.menuId;
         if (req.body.price && req.body.price != '')
@@ -105,5 +109,29 @@ exports.delDrink = (req, res) => {
     Drink.findOneAndRemove({ _id: ObjectId(id) }, err => {
         if (err) return res.status(400).send(err);
         res.status(200).send({ message: 'Delete successfully', success: true });
+    })
+}
+
+exports.bestDrink = (req, res) => {
+    let id = req.params.id;
+    let value = req.params.value;
+    Drink.findById(id, (err, drink) => {
+        drink.best = value;
+        drink.save((err, updateDrink) => {
+            if (err) return res.status(400).send(err);
+            res.status(200).send(updateDrink);
+        })
+    })
+}
+
+exports.bestMenu = (req, res) => {
+    let id = req.params.id;
+    let value = req.params.value;
+    Menu.findById(id, (err, menu) => {
+        menu.best = value;
+        menu.save((err, updateMenu) => {
+            if (err) return res.status(400).send(err);
+            res.status(200).send(updateMenu);
+        })
     })
 }

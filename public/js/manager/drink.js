@@ -8,7 +8,11 @@ var renderTableDrink = data => {
     drinks.find('tbody').empty();
     for (let i = 0; i < data.length; i++) {
         let index = i + 1;
-        let intent = `<tr index="${i}"><td>${index}</td><td>${data[i].name}</td><td>${data[i].price}</td><td>${data[i].menuName}</td><td><button onclick="delDrink('${data[i]._id}')" class='btn btn-danger'>Del</button></td></tr>`
+        let intent;
+        if(data[i].best)
+            intent = `<tr index="${i}"><td>${index}</td><td>${data[i].name}</td><td>${data[i].price}</td><td>${data[i].menuName}</td><td><input class="form-control" type="checkbox" checked/></td><td>${data[i].ex}</td><td><button onclick="delDrink('${data[i]._id}')" class='btn btn-danger'>Del</button></td></tr>`        
+        else
+            intent = `<tr index="${i}"><td>${index}</td><td>${data[i].name}</td><td>${data[i].price}</td><td>${data[i].menuName}</td><td><input class="form-control" type="checkbox"/></td><td>${data[i].ex}</td><td><button onclick="delDrink('${data[i]._id}')" class='btn btn-danger'>Del</button></td></tr>`
         drinks.append(intent);
     }
     drinks.children('tbody').find('tr').click(e => {
@@ -18,7 +22,17 @@ var renderTableDrink = data => {
             $('#dirnkName').val(editDrink.name);
             $('#priceDrink').val(editDrink.price);
             $('#menuDrink').val(editDrink.menu).change()
+            renderExpressionsD(editDrink.expressions)
         }
+    })
+
+    drinks.children('tbody').find('tr').find('input').click((e) => {
+        let index = $(e.originalEvent.path[2]).attr('index');
+        let id = dataDrink[index]._id;
+        let value = $(e.currentTarget).is(':checked');
+        get(`/drink/bestDrink/${id}/${value}`, data => {
+            console.log(data);
+        })
     })
 }
 var delDrink = (id) => {
@@ -40,7 +54,8 @@ var submitFormDrink = (form) => {
     let drinkData = {
         name: null,
         price: null,
-        menuId: null
+        menuId: null,
+        expressions: expressionsD
     }
     //validate
     new Promise((resolve, reject) => {
@@ -113,6 +128,11 @@ var getAllDrink = () => {
                         item.menuName = mn.name;
                     }
                 })
+                item.ex = '';
+                item.expressions.forEach(str => {
+                    item.ex += str + ', ';
+                });
+                item.ex = item.ex.substring(0, item.ex.length - 2)                
             });
             resolve(data)
         }).then((rs) => {
@@ -133,6 +153,17 @@ $('#expressionD').on("keypress", function (e) {
         }
     }
 });
+
+var renderExpressionsD = (data) => {
+    expressionsD = [];
+    let expressionC = $('ul.expressionsD')
+    expressionC.empty();
+    data.forEach(str => {
+        expressionsD.push(str);
+        expressionC.append(`<li class="list-group-item">${str}<span onclick='removeExpressionD(this)' class="glyphicon glyphicon-remove" style="float:right"></span></li>`)
+        $('#expressionD').val('');
+    })
+}
 
 var removeExpressionD = (e) => {
     let parent = $(e).parent()

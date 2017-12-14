@@ -24,5 +24,8 @@ router.delete('/delDrink/:id', drinkCtrl.delDrink);
 
 router.get('/getDrinkByMenu/:id', drinkCtrl.getDrinkByMenu)
 
+router.get('/bestDrink/:id/:value', drinkCtrl.bestDrink)
+
+router.get('/bestMenu/:id/:value', drinkCtrl.bestMenu)
 
 module.exports = router;

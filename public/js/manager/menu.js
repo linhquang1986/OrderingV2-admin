@@ -7,7 +7,11 @@ var renderTableMenu = (data) => {
     menu.find('tbody').empty();
     for (let i = 0; i < data.length; i++) {
         let index = i + 1;
-        let intent = `<tr index="${i}"><td>${index}</td><td>${data[i].name}</td><td><button onclick='delMenu("${data[i]._id}")' class='btn btn-danger'>Del</button><td><tr>`
+        let intent;
+        if (data[i].best)
+            intent = `<tr index="${i}"><td>${index}</td><td>${data[i].name}</td><td><input class="form-control" style="width:10%" type="checkbox" checked/></td><td>${data[i].ex}</td><td><button onclick='delMenu("${data[i]._id}")' class='btn btn-danger'>Del</button><td><tr>`;
+        else
+            intent = `<tr index="${i}"><td>${index}</td><td>${data[i].name}</td><td><input class="form-control" style="width:10%" type="checkbox"/></td><td>${data[i].ex}</td><td><button onclick='delMenu("${data[i]._id}")' class='btn btn-danger'>Del</button><td><tr>`;
         menu.append(intent);
     }
     //select row and bind data
@@ -16,7 +20,18 @@ var renderTableMenu = (data) => {
             let index = e.currentTarget.attributes[0].value;
             editMenu = data[index]
             $('#menuName').val(editMenu.name);
+            renderExpressions(editMenu.expressions)
         }
+    })
+
+    //set menu as best menu
+    menu.children('tbody').find('tr').find('input').click((e) => {
+        let index = $(e.originalEvent.path[2]).attr('index');
+        let id = dataMenu[index]._id;
+        let value = $(e.currentTarget).is(':checked');
+        get(`/drink/bestMenu/${id}/${value}`, data => {
+            console.log(data);
+        })
     })
 }
 var renderDropdowMenu = (data) => {
@@ -30,9 +45,22 @@ var renderDropdowMenu = (data) => {
 //get data menu
 var getAllMenu = () => {
     get('/drink/getAllMenu', data => {
-        dataMenu = data;
-        renderTableMenu(data);
-        renderDropdowMenu(data);
+        new Promise((resolve, reject) => {
+            data.forEach(d => {
+                d.ex = '';
+                if (d.expressions.length > 0) {
+                    d.expressions.forEach(str => {
+                        d.ex += str + ', ';
+                    })
+                    d.ex = d.ex.substring(0, d.ex.length - 2)
+                }
+            })
+            resolve(data)
+        }).then(data => {
+            dataMenu = data;
+            renderTableMenu(data);
+            renderDropdowMenu(data);
+        })
     })
 }
 getAllMenu();
@@ -53,13 +81,20 @@ var clearForm = (form) => {
     editMenu = null;
     editDrink = null;
     editOption = null;
+    expressions = [];
+    $('#expression').val('');
+    $('ul.expressions').empty();
+    expressionsD = [],
+    $('#expressionD').val('');
+    $('ul.expressionsD').empty();
 }
 //handle submit
 var submitForm = (form) => {
     let error = false;
     let data = $(form).serializeArray();
     let menuData = {
-        name: null
+        name: null,
+        expressions: expressions
     }
     let witMenu = {
         entitiId: "menus",
@@ -116,6 +151,17 @@ $('#expression').on("keypress", function (e) {
         }
     }
 });
+
+var renderExpressions = (data) => {
+    expressions = [];
+    let expressionC = $('ul.expressions')
+    expressionC.empty();
+    data.forEach(str => {
+        expressions.push(str);
+        expressionC.append(`<li class="list-group-item">${str}<span onclick='removeExpression(this)' class="glyphicon glyphicon-remove" style="float:right"></span></li>`)
+        $('#expression').val('');
+    })
+}
 
 var removeExpression = (e) => {
     let parent = $(e).parent()
